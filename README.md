@@ -1,5 +1,5 @@
 # thomasA_Resume_Site
-A site for my resume I'm working on 
+#A site for my resume I'm working on. 
 Site is currently ran off of a local python server but will later be ran off of a webhosting site. 
 
 To run: 
