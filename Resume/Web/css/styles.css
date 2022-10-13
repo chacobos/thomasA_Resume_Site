@@ -1,0 +1,200 @@
+@default-background: #BE93D4;
+@default-background-darker: #9867C5;
+@default-border:  #710193;
+
+*:not(title) {
+	background: black;
+	color: white;
+	display: block;
+}
+
+/*=========================================================
+						MAIN PAGE
+=========================================================*/
+
+.intro h2 {
+	color: cadetblue;
+	font-size:2rem;
+	text-align: center;
+}
+
+.intro h3 {
+	color: antiquewhite;
+	margin: 0;
+	text-decoration: underline;
+}
+
+#about {
+    display: flex;
+    margin: 0 3rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#pic {
+	margin: 0 3rem;
+	display: flex;
+}
+
+#pic-para {
+	margin: 0 1rem;
+}
+
+#steve {
+	border: 1px solid white;
+}
+
+#pic-desc {
+	margin: 0;
+	background: gray;
+}
+
+#pic-desc:not(img){
+	padding: 0 0 10px 0;
+	text-align: center;
+}
+
+#menu {
+	position: fixed;
+	background: #dddddd;
+	width: 7rem;
+	display: flex;
+    flex-direction: row-reverse;
+    align-content: stretch;
+    align-items: flex-start;
+    justify-content: flex-end;
+    transform: translateX(-7.5rem);
+    transition-duration: 1s;
+    width: 0;
+    z-index: 1;
+}
+
+#menu:hover{
+	transform: translateX(0rem);
+	transition-duration: 500ms;
+}
+
+#menu-icon{
+	background: #dddddd;
+	width: 2.5rem;
+	position: sticky;
+}
+
+#menu-icon:click{
+	background: gray;
+}
+
+.menu-options ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.menu-options li {
+	width: 7rem;
+}
+
+.menu-options a {
+	background-color: #dddddd;
+	display: block;	  
+	color: black; 
+	padding: 12px; 
+	text-decoration: none; 
+	font-size : 1.5redm;
+}
+
+.menu-options a:hover {
+	background-color: gray;
+}
+
+
+.header {
+	background-color: violet;
+	width: 100%;
+	height: 50px;
+}
+
+.footer {
+	transform: translateY(50rem);
+	background-color: violet;
+	width: 100%;
+	height: 100px;
+}
+
+/*=========================================================
+					PROJECT PAGE
+=========================================================*/
+
+.projects{
+	margin: 0 3rem;
+}
+
+/*=========================================================
+					EDUCATION PAGE
+=========================================================*/
+.education {
+	border-bottom: 1px solid white;
+	margin: 0 3rem;
+}
+
+.education h2{
+	text-align: center;
+}
+
+.education img {
+	margin: 0 0 1rem 0;
+	width: 30%;
+}
+
+.slick-slide {
+	text-align: -webkit-center;
+}
+
+.certifications {
+	margin: 0 3rem;
+}
+
+.certifications li {
+	padding: 5px 0;
+}
+
+/*=========================================================
+						CONTACT PAGE
+=========================================================*/
+
+.contact {
+	transform: translateX(25%);
+}
+
+#contact-header{
+	display: grid;
+	justify-items: center;
+	font-size: 3rem;
+	margin: 1rem 0;
+}
+
+.contact label{
+	font-size: 1.5rem;
+	padding: 1rem 0 0 0;
+}
+
+.contact input {
+	width: 50%;
+}
+
+.contact textarea {
+	width: 50%;
+}
+
+.contact #submit {
+	background-color: darkblue;
+    font-size: 1.5rem;
+    padding: 10px 0;
+    margin: 1rem 0;
+    width: 10%;
+    transform: translateX(200%);
+}
+
+.contact #submit:hover{
+	background-color: blueviolet;
+}

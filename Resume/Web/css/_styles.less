@@ -1,0 +1,166 @@
+/*=========================================================
+						MAIN PAGE
+=========================================================*/
+/*=========================================================
+					PROJECT PAGE
+=========================================================*/
+/*=========================================================
+					EDUCATION PAGE
+=========================================================*/
+/*=========================================================
+						CONTACT PAGE
+=========================================================*/
+* {
+	&:not(title) {
+		background: black;
+		color: white;
+		display: block;
+	}
+}
+.intro {
+	h2 {
+		color: cadetblue;
+		font-size: 2rem;
+		text-align: center;
+	}
+	h3 {
+		color: antiquewhite;
+		margin: 0;
+		text-decoration: underline;
+	}
+}
+#about {
+	display: flex;
+	margin: 0 3rem;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+#pic {
+	margin: 0 3rem;
+	display: flex;
+}
+#pic-para {
+	margin: 0 1rem;
+}
+#steve {
+	border: 1px solid white;
+}
+#pic-desc {
+	margin: 0;
+	background: gray;
+	&:not(img) {
+		padding: 0 0 10px 0;
+		text-align: center;
+	}
+}
+#menu {
+	position: fixed;
+	background: #dddddd;
+	width: 7rem;
+	display: flex;
+	flex-direction: row-reverse;
+	align-content: stretch;
+	align-items: flex-start;
+	justify-content: flex-end;
+	transform: translateX(-7.5rem);
+	transition-duration: 1s;
+	width: 0;
+	&:hover {
+		transform: translateX(0rem);
+		transition-duration: 500ms;
+	}
+}
+#menu-icon {
+	background: #dddddd;
+	width: 2.5rem;
+	position: sticky;
+	&:click {
+		background: gray;
+	}
+}
+.menu-options {
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	li {
+		width: 7rem;
+	}
+	a {
+		background-color: #dddddd;
+		display: block;
+		color: black;
+		padding: 12px;
+		text-decoration: none;
+		font-size: 1.5redm;
+		&:hover {
+			background-color: gray;
+		}
+	}
+}
+.footer {
+	position: absolute;
+	bottom: -20rem;
+	background-color: white;
+	width: 99.3%;
+	height: 25px;
+}
+.projects {
+	margin: 0 3rem;
+}
+.education {
+	border-bottom: 1px solid white;
+	margin: 0 3rem;
+	div {
+		border: 1px solid white;
+		margin: 1rem 0;
+		display: flex;
+		width: 33%;
+		flex-direction: column;
+		align-items: center;
+		content: "";
+		clear: both;
+		display: inline-flex;
+	}
+	img {
+		margin: 0 0 1rem 0;
+		width: 50%;
+	}
+}
+.certifications {
+	margin: 0 3rem;
+	li {
+		padding: 5px 0;
+	}
+}
+.contact {
+	transform: translateX(25%);
+	label {
+		font-size: 1.5rem;
+		padding: 1rem 0 0 0;
+	}
+	input {
+		width: 50%;
+	}
+	textarea {
+		width: 50%;
+	}
+	#submit {
+		background-color: darkblue;
+		font-size: 1.5rem;
+		padding: 10px 0;
+		margin: 1rem 0;
+		width: 10%;
+		transform: translateX(200%);
+		&:hover {
+			background-color: blueviolet;
+		}
+	}
+}
+#contact-header {
+	display: grid;
+	justify-items: center;
+	font-size: 3rem;
+	margin: 1rem 0;
+}
